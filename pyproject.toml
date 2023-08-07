@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "horda"
+name = "chembio"
 version = "0.1.0"
 description = ""
 authors = ["Paweł Rubach <p.rubach@cent.uw.edu.pl>"]
