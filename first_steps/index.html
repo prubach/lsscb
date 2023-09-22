@@ -16,7 +16,7 @@
     
     
       
-        <title>Getting started - CHEMBIO cluster</title>
+        <title>Getting started - LSSCB Cluster</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="CHEMBIO cluster" class="md-header__button md-logo" aria-label="CHEMBIO cluster" data-md-component="logo">
+    <a href=".." title="LSSCB Cluster" class="md-header__button md-logo" aria-label="LSSCB Cluster" data-md-component="logo">
       
   <img src="../img/logo.png" alt="logo">
 
@@ -90,7 +90,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            CHEMBIO cluster
+            LSSCB Cluster
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -177,12 +177,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="CHEMBIO cluster" class="md-nav__button md-logo" aria-label="CHEMBIO cluster" data-md-component="logo">
+    <a href=".." title="LSSCB Cluster" class="md-nav__button md-logo" aria-label="LSSCB Cluster" data-md-component="logo">
       
   <img src="../img/logo.png" alt="logo">
 
     </a>
-    CHEMBIO cluster
+    LSSCB Cluster
   </label>
   
     <div class="md-nav__source">
@@ -451,10 +451,10 @@
                   <h1>Getting started</h1>
                 
                 <h3 id="setting-up-an-account"><strong>Setting up an account</strong></h3>
-<p>In order to create your an account on the CHEMBIO cluster please contact Silvio or Bartosz via e-mail.</p>
+<p>In order to create your an account on the LSSCB cluster please contact Silvio or Bartosz via e-mail.</p>
 <p><strong> After the account is approved you will receive credentials via e-mail from the <code> it @ cent.uw.edu.pl </code> address.</strong></p>
 <p>The obtained password will allow you to login to the entry node (jumphost-59) at <code>sih-59.cent.uw.edu.pl</code> and from there 
-to login to the CHEMBIO cluster front-node (ssh CHEMBIO) and use the compute <a href="../resources/">nodes</a> <code>ogr-[0-1] and troll-[1]</code>.</p>
+to login to the LSSCB cluster front-node (ssh lsscb) and use the compute <a href="../resources/">nodes</a> <code>cn00[0-2]</code>.</p>
 <p><strong> Please familiarize yourself with the general rules of cluster usage before proceeding
 further - <a href="../rules/">LINK</a> </strong></p>
 <div class="admonition warning">
@@ -468,18 +468,18 @@ further - <a href="../rules/">LINK</a> </strong></p>
 <p><strong>Please note that password changes on each of the compute nodes and the entry node are synced. It is advised to change your initially obtained password after first login.</strong></p>
 </div>
 <h3 id="connecting-via-ssh"><strong>Connecting via SSH</strong></h3>
-<p>Connections to the CHEMBIO cluster are handled via SSH protocol. See the figure below
+<p>Connections to the LSSCB cluster are handled via SSH protocol. See the figure below
 for a brief introduction of the network organization:
 <img alt="Screenshot" src="img/CHEMBIO_scheme.png" /></p>
 <p>In order to login to the entry node you can issue the following command:</p>
 <p><div class="highlight"><pre><span></span><code>ssh your_username@sih-59.cent.uw.edu.pl
 </code></pre></div>
-This will bring you to the <strong>entry node (jumphost-59)</strong>, afterwards you can connect to the CHEMBIO (10.10.59.30) front node and submit tasks to the <strong>compute nodes</strong> 
+This will bring you to the <strong>entry node (jumphost-59)</strong>, afterwards you can connect to the LSSCB (10.10.59.30) front node and submit tasks to the <strong>compute nodes</strong> 
 (<a href="../resources/">click here</a> for a complete list of available resources), for example:
 <div class="highlight"><pre><span></span><code>ssh your_username@10.10.59.30
 </code></pre></div></p>
 <p><strong>In order to simplify file copying and every day work the suggested way of connecting
-to the <code>CHEMBIO</code>cluster is to use <a href="https://github.com/sshuttle/sshuttle">sshuttle</a>. This allows to
+to the <code>LSSCB</code>cluster is to use <a href="https://github.com/sshuttle/sshuttle">sshuttle</a>. This allows to
 bypass the login node and work almost the same way as being connected via VPN to the local network.</strong></p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -487,13 +487,13 @@ bypass the login node and work almost the same way as being connected via VPN to
 you can connect as follows:
 <div class="highlight"><pre><span></span><code>sshuttle --dns -NHr your_username@sih-59.cent.uw.edu.pl <span class="m">10</span>.10.59.1/24
 </code></pre></div>
-Once connection is established you can directly login to the CHEMBIO front node or compute nodes using:
-<div class="highlight"><pre><span></span><code>ssh your_username@CHEMBIO.sih-59.internal
+Once connection is established you can directly login to the LSSCB front node or compute nodes using:
+<div class="highlight"><pre><span></span><code>ssh your_username@LSSCB.sih-59.internal
 </code></pre></div></p>
 </div>
 <div class="admonition information">
 <p class="admonition-title">Information</p>
-<p>Additionally, depending on your computer and network settings, you may have to connect to <code>CHEMBIO</code> nodes 
+<p>Additionally, depending on your computer and network settings, you may have to connect to <code>LSSCB</code> nodes 
 once without <code>sshuttle</code> so that SSH connections are properly configured.</p>
 </div>
 <p>To avoid putting password during each login you can set up authorization via a certificate - additional information
@@ -506,10 +506,10 @@ is available <a href="https://www.digitalocean.com/community/tutorials/how-to-co
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>These folders are shared between all nodes of the CHEMBIO cluster as well as the jumphost-59.</strong> </p>
+<p><strong>These folders are shared between all nodes of the LSSCB cluster as well as the jumphost-59.</strong> </p>
 </div>
 <h3 id="transferring-files"><strong>Transferring files</strong></h3>
-<p>The recommended options to send or fetch files from CHEMBIO cluster are either <code>scp</code> or <code>rsync</code>.</p>
+<p>The recommended options to send or fetch files from LSSCB cluster are either <code>scp</code> or <code>rsync</code>.</p>
 <h3 id="next-steps"><strong>Next steps</strong></h3>
 <p>Once the basics are set up you should be able to start running calculations. Follow the next chapter for more details.</p>
                 
