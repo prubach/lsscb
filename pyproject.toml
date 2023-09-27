@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "chembio"
-version = "0.1.0"
+name = "lsscb"
+version = "0.2.0"
 description = ""
 authors = ["Paweł Rubach <p.rubach@cent.uw.edu.pl>"]
 

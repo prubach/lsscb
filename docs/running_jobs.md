@@ -1,6 +1,6 @@
 ### **Introduction**
 
-Jobs (both batch and interactive sessions) on CHEMBIO should be run through **slurm** resource manager.
+Jobs (both batch and interactive sessions) on LSSCB should be run through **slurm** resource manager.
 For the quick overview of **slurm** you can refer to the video: [link](https://www.youtube.com/watch?v=U42qlYkzP9k&feature=player_embedded)
 
 !!! Information
@@ -26,7 +26,7 @@ For the quick overview of **slurm** you can refer to the video: [link](https://w
     ```
 ### **Interactive sessions**
 
-CHEMBIO can be used for interactive work with data, e.g. performing ad-hoc analyses and visualizations
+LSSCB can be used for interactive work with data, e.g. performing ad-hoc analyses and visualizations
 with python and jupyter-notebooks. You can either start an interactive session using <code>srun</code> or allocate 
 resources using the <code>salloc</code> utility and then ssh into that host and work there.
 You can tweak your allocation depending on work needs, see the following table for details and examples.
@@ -37,7 +37,7 @@ Both commands have a similar set of options:
 | **-n**     | Number of cores used allocated for the job (_default = 1, max = 36_)                             |
 | **--gres** | Number of GPUs allocated for the job (_default = None, --gres=gpu, --gres=gpu:2)                 |
 | **--mem**  | Amount of memory (in GBs) **per allocated core** allocated for the job (_default = 1, max = 60_) |
-| **-w**     | Specify host or hosts to get your resources (i.e. troll-1)                                       |
+| **-w**     | Specify host or hosts to get your resources (i.e. cn001)                                        |
 
 !!! Example
     To login interactively to **cn002** with **8 cores** and a total of **12 GB of memory**:

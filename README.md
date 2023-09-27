@@ -1,4 +1,4 @@
-# HORDA documentation
+# LSSCB documentation
 
 ## Guide
 

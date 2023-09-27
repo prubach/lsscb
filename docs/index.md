@@ -1,4 +1,4 @@
-**Welcome to the documentation webpage of the CHEMBIO cluster.**
+**Welcome to the documentation webpage of the LSSCB cluster.**
 
 | Section | Description |
 |---|---|
