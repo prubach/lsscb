@@ -1,6 +1,6 @@
-The New LSSCB cluster currently has in total 156 physical CPUs, 384 GB of RAM and around 110 TB of shared storage space.
+The New LSSCB cluster currently has in total 540 physical CPUs, 1664 GB of RAM and around 60 TB of shared storage space.
 
-All Nodes including the Front Node (LSSCB) run Ubuntu 22.04.2 LTS Linux
+All Nodes including the Front Node (LSSCB) run Ubuntu 22.04.3 LTS Linux
 
 Characteristics of available compute nodes are summarized below:
 
