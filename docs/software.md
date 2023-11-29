@@ -7,6 +7,7 @@
 | **Gaussian**                  | 16                 | all  | <code>/opt/g16/*</code>                                       | @Pawel     |
 | **GaussView**                 | 6.1.1              | all  | <code>/opt/gv/*</code>                                        | @Pawel     |
 | **gromacs**                   | 2023.2             | all  | <code>/opt/gromacs-2023.2/*</code>                            | @Pawel     |
+| **gromacs**                   | 2023.3             | all  | <code>/opt/gromacs-2023.3/*</code>                            | @Pawel     |
 | **intel oneAPI Base Toolkit** | 2023.2             | all  | <code>/opt/intel/*</code>                                     | @Pawel     |
 | **intel oneAPI HPC Toolkit**  | 2023.2             | all  | <code>/opt/intel/*</code>                                     | @Pawel     |
 | **jdftx**                     | 1.7.0              | all  | <code>/opt/jdftx/*</code>                                     | @Pawel     |
