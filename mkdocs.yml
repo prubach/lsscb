@@ -14,6 +14,7 @@ nav:
     - Home: index.md
     - Getting started: first_steps.md
     - Running calculations: running_jobs.md
+    - Remote GUI access: remote_graphics.md
     - FAQ: faq.md
     - Available resources: resources.md
     - Available software: software.md
