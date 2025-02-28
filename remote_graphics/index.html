@@ -16,7 +16,7 @@
     
     
       
-        <title>Available software - LSSCB Cluster</title>
+        <title>Remote GUI access - LSSCB Cluster</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#remote-graphical-access-to-lab-workstations" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Available software
+              Remote GUI access
             
           </span>
         </div>
@@ -246,11 +251,69 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../remote_graphics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Remote GUI access
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Remote GUI access
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#remote-graphical-access-to-lab-workstations" class="md-nav__link">
+    Remote graphical access to Lab Workstations
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote graphical access to Lab Workstations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#existing-session" class="md-nav__link">
+    Existing session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-remote-session" class="md-nav__link">
+    New remote session
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -291,19 +354,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../software/" class="md-nav__link">
         Available software
       </a>
-      
     </li>
   
 
@@ -330,213 +385,109 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#remote-graphical-access-to-lab-workstations" class="md-nav__link">
+    Remote graphical access to Lab Workstations
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote graphical access to Lab Workstations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#existing-session" class="md-nav__link">
+    Existing session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-remote-session" class="md-nav__link">
+    New remote session
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/prubach/chembio/edit/master/docs/software.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/prubach/chembio/edit/master/docs/remote_graphics.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Available software</h1>
+                  <h1>Remote GUI access</h1>
                 
-                <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Version</th>
-<th>Hosts</th>
-<th>Location</th>
-<th>Maintainer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>ABCluster</strong></td>
-<td>3.2</td>
-<td>all</td>
-<td><code>/opt/ABCluster-3.2/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>autodock vina</strong></td>
-<td>1.1.2</td>
-<td>all</td>
-<td><code>/opt/autodock_vina_1_1_2_linux_x86/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>autodock</strong></td>
-<td>4.2.6</td>
-<td>all</td>
-<td><code>/opt/autodock_x86_64Linux2/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>dftbplus</strong></td>
-<td>19.1</td>
-<td>all</td>
-<td><code>/opt/dftbplus-19.1.x86_64-linux/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>dftbplus</strong></td>
-<td>22.1</td>
-<td>all</td>
-<td><code>/opt/dftbplus-22.1.x86_64-linux/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>Gaussian</strong></td>
-<td>16</td>
-<td>all</td>
-<td><code>/opt/g16/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>GaussView</strong></td>
-<td>6.1.1</td>
-<td>all</td>
-<td><code>/opt/gv/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>gromacs</strong></td>
-<td>2023.2</td>
-<td>all</td>
-<td><code>/opt/gromacs-2023.2/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>gromacs</strong></td>
-<td>2023.3</td>
-<td>all</td>
-<td><code>/opt/gromacs-2023.3/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>intel oneAPI Base Toolkit</strong></td>
-<td>2023.2</td>
-<td>all</td>
-<td><code>/opt/intel/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>intel oneAPI HPC Toolkit</strong></td>
-<td>2023.2</td>
-<td>all</td>
-<td><code>/opt/intel/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>jdftx</strong></td>
-<td>1.7.0</td>
-<td>all</td>
-<td><code>/opt/jdftx/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>julia</strong></td>
-<td>1.9.2</td>
-<td>all</td>
-<td><code>/opt/julia-1.9.2/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>NAMD</strong></td>
-<td>2.14</td>
-<td>all</td>
-<td><code>/opt/NAMD_2.14_Linux-x86_64-multicore/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>MOMAP</strong></td>
-<td>2022B</td>
-<td>all</td>
-<td><code>/opt/MOMAP-2022B/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>orca</strong></td>
-<td>5.0.4</td>
-<td>all</td>
-<td><code>/opt/orca_5_0_4_linux_x86-64_shared_openmpi411/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>perl</strong></td>
-<td>5.34</td>
-<td>all</td>
-<td><code>/usr</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>psi4conda</strong></td>
-<td>4.13</td>
-<td>all</td>
-<td><code>/opt/psi4conda/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>python</strong></td>
-<td>2.7 and 3.10</td>
-<td>all</td>
-<td><code>/usr</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>qchem</strong></td>
-<td>QCHEM_21APRIL_2021</td>
-<td>all</td>
-<td><code>/opt/qchem/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>schrodinger</strong></td>
-<td>2021-2</td>
-<td>all</td>
-<td><code>/opt/schrodinger2021-2/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>schrodinger</strong></td>
-<td>2022-4</td>
-<td>all</td>
-<td><code>/opt/schrodinger2022-4/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>vasp</strong></td>
-<td>6.4.2</td>
-<td>all</td>
-<td><code>/opt/vasp.6.4.2/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>xtb</strong></td>
-<td>6.2.2</td>
-<td>all</td>
-<td><code>/opt/xtb_6.2.2/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>xtb</strong></td>
-<td>6.4.1</td>
-<td>all</td>
-<td><code>/opt/xtb-6.4.1/*</code></td>
-<td>@Pawel</td>
-</tr>
-<tr>
-<td><strong>xtb</strong></td>
-<td>6.5.1</td>
-<td>all</td>
-<td><code>/opt/xtb-6.5.1/*</code></td>
-<td>@Pawel</td>
-</tr>
-</tbody>
-</table>
+                <h3 id="remote-graphical-access-to-lab-workstations"><strong>Remote graphical access to Lab Workstations</strong></h3>
+<p>There are 2 options depending on whether you want to graphically connect to an existing session 
+open on the workstation or you want to remotely start a new one and connect to it.</p>
+<h4 id="existing-session">Existing session</h4>
+<p>In the first case the recommended solution is <a href="https://www.nomachine.com/">NoMachine</a>.</p>
+<p>Ask the administrator to install it on your workstation if you don't have the necessary privileges.</p>
+<p>After the installation the daemon is by default available at port 4000. You'll have to connect to SIH-59
+using VPN (ask CeNT IT for an account) or use the <a href="../first_steps/">sshuttle</a></p>
+<h4 id="new-remote-session">New remote session</h4>
+<p>The second solution allows creating an independent GUI session. This uses TigerVNC which should be already installed:</p>
+<div class="admonition first-time configuration">
+<p class="admonition-title">First-time</p>
+<ol>
+<li>Set password: <code>vncpasswd</code></li>
+<li>Run for the first time: <code>vncserver</code></li>
+<li>Kill the session: <code>vncserver -kill :*</code></li>
+<li>Replace the contents of the <code>$HOME/.vnc/xstartup</code> file with:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/sh</span>
+<span class="o">[</span> -x /etc/vnc/xstartup <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">exec</span> /etc/vnc/xstartup
+<span class="o">[</span> -r <span class="nv">$HOME</span>/.Xresources <span class="o">]</span> <span class="o">&amp;&amp;</span> xrdb <span class="nv">$HOME</span>/.Xresources
+vncconfig -iconic <span class="p">&amp;</span>
+dbus-launch --exit-with-session gnome-session
+</code></pre></div>
+</div>
+<div class="admonition starting-stopping">
+<p class="admonition-title">Starting-stopping</p>
+<ol>
+<li>Start a new session adjusting the color depth and screen size:
+<code>sh
+vncserver -localhost no -geometry 1800x900 -depth 24</code></li>
+<li>To kill your session use: <code>vncserver -kill :*</code></li>
+</ol>
+</div>
+<p>To connect install <a href="https://tigervnc.org/">TigerVNC Client</a> on your laptop and connect using VPN (ask CeNT IT for an account) or use the <a href="../first_steps/">sshuttle</a>.</p>
+<p>TigerVNC uses ports 590x, where x is the session number. If your session is the only one it should have port 5901.
+In that case if you connect using sshuttle use the following connection address in the TigerVNC client (substitute with lab0xx):
+<div class="highlight"><pre><span></span><code>lab001.sih-59.internal:5901
+</code></pre></div></p>
                 
               
               
@@ -556,7 +507,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../resources/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Available resources" rel="prev">
+        <a href="../running_jobs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Running calculations" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -565,20 +516,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Available resources
+              Running calculations
             </div>
           </div>
         </a>
       
       
         
-        <a href="../rules/" class="md-footer__link md-footer__link--next" aria-label="Next: General rules" rel="next">
+        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="Next: FAQ" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              General rules
+              FAQ
             </div>
           </div>
           <div class="md-footer__button md-icon">
